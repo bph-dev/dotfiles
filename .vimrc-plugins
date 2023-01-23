@@ -1,0 +1,29 @@
+" .vimrc-plugins (all plugins are managed via vim-plug)
+
+call plug#begin()
+" Indentation
+Plug 'Yggdroot/indentLine'
+
+" Colorscheme
+Plug 'dracula/vim', {'as':'dracula'}
+Plug 'morhetz/gruvbox'
+
+" Statusbar
+Plug 'itchyny/lightline.vim'
+
+" Git
+Plug 'tpope/vim-fugitive'
+
+" Tabs
+Plug 'ap/vim-buftabline'
+
+" Syntax highlighting
+Plug 'dense-analysis/ale'
+
+" Liniting plugin for vim
+Plug 'xojs/vim-xo'
+
+call plug#end()
+
+set background=dark
+colorscheme gruvbox
