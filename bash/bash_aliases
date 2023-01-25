@@ -8,6 +8,7 @@ alias g??="git diff --cached" # Different from Vim
 alias gv="git pull --ff --commit"
 alias g^="git push"
 alias gp="git checkout -p"
+alias gl="git log --oneline"
 
 alias go="git checkout"
 
