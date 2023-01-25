@@ -1,0 +1,29 @@
+" .vimrc-plugins (all plugins are managed via vim-plug)
+
+call plug#begin()
+" Indentation plugin for vim
+Plug 'Yggdroot/indentLine'
+
+" Colorscheme plugins for vim
+Plug 'dracula/vim', {'as':'dracula'}
+Plug 'morhetz/gruvbox'
+
+" Statusbar plugin for vim
+Plug 'itchyny/lightline.vim'
+
+" Git integration plugin for vim
+Plug 'tpope/vim-fugitive'
+
+" Tabs plugin for vim
+Plug 'ap/vim-buftabline'
+
+" Syntax highlighting plugin for vim
+Plug 'dense-analysis/ale'
+
+" Liniting plugin for vim
+Plug 'xojs/vim-xo'
+
+" Tree explorer plugin for vim
+Plug 'preservim/nerdtree'
+
+call plug#end()
