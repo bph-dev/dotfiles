@@ -69,8 +69,8 @@ map - ddp
 
 " Import plugins
 " autoload/dev/plugins
-if filereadable(expand("~/dotfiles/vim/vim/ftplugin/.vimrc-plugins"))
-        source ~/dotfiles/vim/vim/ftplugin/.vimrc-plugins
+if filereadable(expand("~/dotfiles/vim/vim/ftplugin/vimrc-plugins"))
+        source ~/dotfiles/vim/vim/ftplugin/vimrc-plugins
 endif
 
 call dev#filetype#filetype_auto_start()
