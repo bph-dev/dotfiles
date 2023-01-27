@@ -26,4 +26,7 @@ Plug 'xojs/vim-xo'
 " Tree explorer plugin for vim
 Plug 'preservim/nerdtree'
 
+" Vim Tmux Navigator
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
