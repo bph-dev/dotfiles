@@ -1,4 +1,4 @@
 #!/usr/bin/sh
 
-"$SYM" "$THERE_PROJ/vim" "$OUT/.vim"
-"$SYM" "$THERE_PROJ/vimrc" "$OUT/.vimrc"
+"$SYM_LINK" "$LOCAL_PROJ/vim" "$HOME/.vim"
+"$SYM_LINK" "$LOCAL_PROJ/vimrc" "$HOME/.vimrc"

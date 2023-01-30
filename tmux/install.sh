@@ -1,3 +1,3 @@
 #!/usr/bin/sh
 
-"$SYM" "$THERE_PROJ/tmux.conf" "$OUT/.tmux.conf"
+"$SYM_LINK" "$LOCAL_PROJ/tmux.conf" "$HOME/.tmux.conf"
