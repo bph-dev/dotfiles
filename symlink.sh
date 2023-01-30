@@ -14,7 +14,7 @@ DEST="$2"
 
 if [ -e "$DEST" ]; then
     if [ "$(readlink "$DEST")" = "$SOURCE" ]; then
-        # Already linked; ignore
+        # Already linked; destination exists; ignore
         exit 0
     else
         echo "$DEST already exists; ignoring" >&2
