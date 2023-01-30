@@ -1,3 +1,3 @@
 #!/usr/bin/sh
 
-"$SYM" "$THERE_PROJ/bash_aliases" "$OUT/.bash_aliases"
+"$SYM_LINK" "$LOCAL_PROJ/bash_aliases" "$HOME/.bash_aliases"
