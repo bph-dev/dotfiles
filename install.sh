@@ -7,22 +7,23 @@ if [ "$#" -ne "1" ]; then
 	exit 1
 fi 
 
-THERE="$(cd "$HOME" && pwd)"
-OUT="$1"
+PWD="$(cd "$HOME" && pwd)"
+HOME="$1"
 
-cd "$THERE"
+cd "$PWD"
 
 local_projects=(
 	bash
 	tmux
 	vim
+	lynx
 )
 
 echo "Symlinking files.."
-SYM="$THERE/dotfiles/symlink.sh"
-for project in "${local_projects[@]}"; do 
-	echo "($project)"
-	THERE_PROJ="$THERE/dotfiles/$project"
-	. "$THERE_PROJ/install.sh"
+SYM_LINK="$PWD/dotfiles/symlink.sh"
+for proj in "${local_projects[@]}"; do 
+	echo "($proj)"
+	LOCAL_PROJ="$PWD/dotfiles/$proj"
+	. "$LOCAL_PROJ/install.sh"
 done
 
