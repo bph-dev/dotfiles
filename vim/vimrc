@@ -2,8 +2,10 @@ set encoding=utf-8
 scriptencoding utf-8
 
 "------+ General +------
-set tabstop=4
-set shiftwidth=4
+set smartindent
+set tabstop=2
+set expandtab
+set shiftwidth=2
 set noswapfile
 set noerrorbells
 " When opening a new line and no filetype-specific indenting is enabled, keep
