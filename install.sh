@@ -16,14 +16,17 @@ local_projects=(
 	bash
 	tmux
 	vim
+  nvim
 	lynx
 )
 
-echo "Symlinking files.."
+echo "Symlinking files..."
 SYM_LINK="$PWD/dotfiles/symlink.sh"
 for proj in "${local_projects[@]}"; do 
 	echo "($proj)"
 	LOCAL_PROJ="$PWD/dotfiles/$proj"
 	. "$LOCAL_PROJ/install.sh"
 done
+
+unset PWD proj LOCAL_PROJ local_projects HOME 
 
