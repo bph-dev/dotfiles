@@ -9,7 +9,7 @@ alias gv="git pull --ff --commit"
 alias g^="git push"
 alias gp="git checkout -p"
 alias gl="git log --oneline"
-alias go="git checkout"
+alias gch="git checkout"
 
 # Command Line
 ## (ls))
