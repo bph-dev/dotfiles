@@ -13,11 +13,13 @@ HOME="$1"
 cd "$PWD"
 
 local_projects=(
-	bash
-	tmux
-	vim
-  nvim
-	lynx
+  lynx
+  go 
+  tmux
+  vim
+  #nvim
+  bash
+  #zsh 
 )
 
 echo "Symlinking files..."

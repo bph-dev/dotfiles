@@ -1,0 +1,32 @@
+# Git related stuff
+alias gs="git status -s -b"
+alias gc="git commit -v"
+alias g.="git add -p"
+alias gi="git add -i" # Different from Vim
+alias g?="git diff"
+alias g??="git diff --cached" # Different from Vim
+alias gv="git pull --ff --commit"
+alias g^="git push"
+alias gp="git checkout -p"
+alias gl="git log --oneline"
+alias gch="git checkout"
+
+# Command Line
+## (ls))
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+## (cd)
+alias cd.="cd ../"
+alias cd..="cd ../../"
+alias cd...="cd ../../../"
+
+## Kubernetes CLI
+## (kubectl)
+alias k='kubectl'
+alias kaf='k apply -f '
+
+# Vim/NeoVim
+alias nvm='nvim'
+

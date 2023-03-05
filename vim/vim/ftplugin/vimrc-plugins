@@ -1,32 +1,42 @@
 "(vimrc-plugins (all plugins are managed via vim-plug)
-
 call plug#begin()
+
+" ==============================
+" = Vim
+" ==============================
 " Indentation plugin for vim
 Plug 'Yggdroot/indentLine'
-
 " Colorscheme plugins for vim
 Plug 'dracula/vim', {'as':'dracula'}
 Plug 'morhetz/gruvbox'
-
+Plug 'whatyouhide/vim-gotham'
 " Statusbar plugin for vim
 Plug 'itchyny/lightline.vim'
-
 " Git integration plugin for vim
 Plug 'tpope/vim-fugitive'
-
 " Tabs plugin for vim
 Plug 'ap/vim-buftabline'
-
-" Syntax highlighting plugin for vim
-Plug 'dense-analysis/ale'
-
-" Liniting plugin for vim
-Plug 'xojs/vim-xo'
-
 " Tree explorer plugin for vim
 Plug 'preservim/nerdtree'
 
+" ==============================
+" = Tmux
+" ==============================
 " Vim Tmux Navigator
 Plug 'christoomey/vim-tmux-navigator'
 
+" ==============================
+" = JavaScript
+" ==============================
+" Liniting plugin for vim
+Plug 'xojs/vim-xo'
+" Syntax highlighting plugin for vim
+Plug 'dense-analysis/ale'
+
+" ==============================
+" = Go
+" ==============================
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 call plug#end()
+

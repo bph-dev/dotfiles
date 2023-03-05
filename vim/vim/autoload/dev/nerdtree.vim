@@ -25,3 +25,4 @@ function! s:NERDTree_Maps() abort
   let g:NERDTreeMapJumpNextSibling = '<Nop>'
   let g:NERDTreeMapJumpPrevSibling = '<Nop>'
 endfunction
+

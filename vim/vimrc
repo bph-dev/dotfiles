@@ -12,7 +12,7 @@ set noerrorbells
 " the same indent as the line you're currently on. Useful for READMEs, etc.
 set autoindent 
 " Allow backspacing over autoindent, line breaks and start of insert action
-set backspace=indent,eol,start
+set backspace=indent,eol
 " Display the cursor position on the last line of the screen or in the status
 " line of a window
 set ruler
@@ -82,6 +82,13 @@ nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
 nnoremap <C-N> :bnext<CR>
 
+inoremap { {}<Esc>ha
+inoremap ( ()<Esc>ha
+inoremap [ []<Esc>ha
+inoremap " ""<Esc>ha
+inoremap ' ''<Esc>ha
+inoremap ` ``<Esc>ha
+
 " fix(vimrc): Map a key binding to a custom function call that autocmd plugins
 "noremap <C-I> :execute <SID>dev#plugins#plug_install()<CR>
 
@@ -93,16 +100,20 @@ map - ddp
 " Import plugins
 " autoload/dev/plugins
 if filereadable(expand("~/dotfiles/vim/vim/ftplugin/vimrc-plugins"))
-        source ~/dotfiles/vim/vim/ftplugin/vimrc-plugins
+  source ~/dotfiles/vim/vim/ftplugin/vimrc-plugins
 endif
 
 call dev#filetype#filetype_auto_start()
 call dev#nerdtree#NERDTree_auto_start()
 
 " Colorscheming
-set background=dark
-colorscheme gruvbox
+"set background=dark
+""colorscheme gruvbox
+""colorscheme dracula
+colorscheme gotham256
+let g:lightline = { 'colorscheme': 'gotham256' } 
 
-" Must be last. This command is dangerous due to vim running everything 
+"Must be last. This command is dangerous due to vim running everything 
 " listed in the *.vim files
 set exrc secure
+

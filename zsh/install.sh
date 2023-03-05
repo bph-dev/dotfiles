@@ -1,9 +1,9 @@
 #!/usr/bin/sh
 
-cat >> "$HOME/.bashrc" <<EOF
+cat >> "$HOME/.zshrc" <<EOF
 # User specific aliases and functions
-if [ -d ~/.bashrc.d ]; then
-  for rc in ~/.bashrc.d/*; do
+if [ -d ~/.zshrc.d ]; then
+  for rc in ~/.zshrc.d/*; do
     if [ -f "\$rc" ]; then
       . "\$rc"
     fi
@@ -15,7 +15,7 @@ unset rc
 #source <(kubectl completion bash | sed s/kubectl/k/g)
 EOF
 
-"$SYM_LINK" "$LOCAL_PROJ/bashrc.d/bash_aliases" "$HOME/.bashrc.d/bash_aliases"
+"$SYM_LINK" "$LOCAL_PROJ/zshrc.d/zsh_aliases" "$HOME/.zshrc.d/zsh_aliases"
 
-source "$HOME/.bashrc"
+source "$HOME/.zshrc"
 
