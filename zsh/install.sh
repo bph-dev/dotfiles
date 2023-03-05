@@ -16,6 +16,7 @@ unset rc
 EOF
 
 "$SYM_LINK" "$LOCAL_PROJ/zshrc.d/zsh_aliases" "$HOME/.zshrc.d/zsh_aliases"
+"$SYM_LINK" "$LOCAL_PROJ/zshrc" "$HOME/.zshrc"
 
 source "$HOME/.zshrc"
 
