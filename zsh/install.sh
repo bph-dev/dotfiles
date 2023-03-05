@@ -16,7 +16,12 @@ unset rc
 EOF
 
 "$SYM_LINK" "$LOCAL_PROJ/zshrc.d/zsh_aliases" "$HOME/.zshrc.d/zsh_aliases"
-"$SYM_LINK" "$LOCAL_PROJ/zshrc" "$HOME/.zshrc"
+if ! [ -d "$HOME/.oh-my-zsh"]; then
+  sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  "$SYM_LINK" "$LOCAL_PROJ/zshrc" "$HOME/.zshrc"
+fi
+
+"$SYM_LINK" "$LOCAL_PROJ/p10k.zsh" "$HOME/.p10k.zsh"
 
 source "$HOME/.zshrc"
 
